@@ -53,7 +53,7 @@ sudo chown -R root:staff /usr/local/share/zsh
 # Terminal
 brew install --cask hyper
 brew install starship
-echo 'eval "$(starship init zsh)"' >> $MAC_SETUP_PROFILE
+echo "eval '$(starship init zsh)'" >> $MAC_SETUP_PROFILE
 
 # Pimp command line
 brew install micro                                                                                    # replacement for nano/vi
@@ -151,11 +151,13 @@ pip3 install saws    # A supercharged AWS command line interface (CLI).
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
 }>>"$HOME/.zsh_profile"
-# shellcheck disable=SC1090
+
+# shellcheck disable=SC1091
 source "$HOME/.zsh_profile"
 
 {
   echo "source $MAC_SETUP_PROFILE # alias and things added by mac_setup script"
 }>>~/.bash_profile
+
 # shellcheck disable=SC1090
 source ~/.bash_profile
