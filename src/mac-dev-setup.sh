@@ -15,7 +15,6 @@ else
 fi
 
 # CURL / WGET
-brew install curl
 brew install wget
 
 {
