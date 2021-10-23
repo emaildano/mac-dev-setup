@@ -55,6 +55,9 @@ brew install --cask hyper
 brew install starship
 echo "eval '$(starship init zsh)'" >> $MAC_SETUP_PROFILE
 
+# Shell
+brew install shellcheck
+
 # Pimp command line
 brew install micro                                                                                    # replacement for nano/vi
 brew install lsd                                                                                      # replacement for ls
