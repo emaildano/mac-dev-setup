@@ -78,34 +78,31 @@ echo '. /usr/local/etc/profile.d/z.sh' >> $MAC_SETUP_PROFILE
 
 brew install ctop
 
-# fonts (https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)
+# Fonts
 brew tap homebrew/cask-fonts
-brew install --cask font-jetbrains-mono
+brew install --cask font-fira-code
 
 # Browser
 brew install --cask google-chrome
+brew install --cask brave-browser
 brew install --cask firefox
 brew install --cask microsoft-edge
 
 # Music / Video
-brew install --cask spotify
 brew install --cask vlc
 
 # Productivity
-brew install --cask evernote                                                                            # cloud note
 brew install --cask kap                                                                                 # video screenshot
 brew install --cask rectangle                                                                           # manage windows
 
 # Communication
 brew install --cask slack
-brew install --cask whatsapp
 
 # Dev tools
 brew install --cask ngrok                                                                               # tunnel localhost over internet.
 brew install --cask postman                                                                             # Postman makes sending API requests simple.
 
 # IDE
-brew install --cask jetbrains-toolbox
 brew install --cask visual-studio-code
 
 # Language
@@ -114,23 +111,6 @@ mkdir ~/.nvm
 brew install nvm                                                                                     # choose your version of npm
 nvm install node                                                                                     # "node" is an alias for the latest version
 brew install yarn                                                                                    # Dependencies management for node
-
-
-## Java
-curl -s "https://get.sdkman.io" | bash                                                               # sdkman is a tool to manage multiple version of java
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java
-brew install maven
-brew install gradle
-
-## golang
-{
-  echo "# Go development"
-  echo "export GOPATH=\"\${HOME}/.go\""
-  echo "export GOROOT=\"\$(brew --prefix golang)/libexec\""
-  echo "export PATH=\"\$PATH:\${GOPATH}/bin:\${GOROOT}/bin\""
-}>>$MAC_SETUP_PROFILE
-brew install go
 
 ## python
 echo "export PATH=\"/usr/local/opt/python/libexec/bin:\$PATH\"" >> $MAC_SETUP_PROFILE
@@ -148,14 +128,10 @@ brew install terraform
 terraform -v
 
 # Databases
-brew install --cask dbeaver-community # db viewer
-brew install libpq                  # postgre command line
-brew link --force libpq
-# shellcheck disable=SC2016
-echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> $MAC_SETUP_PROFILE
+brew install --cask dbeaver-community
 
 # SFTP
-brew install --cask cyberduck
+brew install --cask transmit
 
 # Docker
 brew install --cask docker
@@ -167,11 +143,6 @@ brew install docker-machine-completion
 # AWS command line
 brew install awscli # Official command line
 pip3 install saws    # A supercharged AWS command line interface (CLI).
-
-# K8S command line
-brew install kubectx
-brew install asdf
-asdf install kubectl latest
 
 # reload profile files.
 {
