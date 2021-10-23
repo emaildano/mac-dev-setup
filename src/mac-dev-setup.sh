@@ -51,7 +51,7 @@ sudo chown -R root:staff /usr/local/share/zsh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"# Install oh-my-zsh on top of zsh to getting additional functionality
 # Terminal replacement https://www.iterm2.com
-brew install --cask iterm2
+brew install --cask hyper
 # Pimp command line
 brew install micro                                                                                    # replacement for nano/vi
 brew install lsd                                                                                      # replacement for ls
