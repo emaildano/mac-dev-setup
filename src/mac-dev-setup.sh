@@ -56,8 +56,6 @@ hyper i hyper-dracula
 brew install starship
 echo "eval '$(starship init zsh)'" >> $MAC_SETUP_PROFILE
 
-/bin/bash -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash)"
-
 # Shell
 brew install shellcheck
 
@@ -120,8 +118,7 @@ brew install --cask visual-studio-code
 
 # Language
 ## Node / Javascript
-mkdir ~/.nvm
-brew install nvm                                                                                     # choose your version of npm
+/bin/bash -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash)"    # nvm
 nvm install node                                                                                     # "node" is an alias for the latest version
 brew install yarn                                                                                    # Dependencies management for node
 
