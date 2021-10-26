@@ -52,6 +52,7 @@ sudo chown -R root:staff /usr/local/share/zsh
 
 # Terminal
 brew install --cask hyper
+hyper i hyper-dracula
 brew install starship
 echo "eval '$(starship init zsh)'" >> $MAC_SETUP_PROFILE
 
