@@ -100,6 +100,10 @@ brew install --cask vlc
 # Productivity
 brew install --cask kap                                                                                 # video screenshot
 brew install --cask rectangle                                                                           # manage windows
+brew install --cask figma
+brew install --cask adobe-creative-cloud
+brew install --cask deepl
+brew install --cask grammarly
 
 # Communication
 brew install --cask slack
