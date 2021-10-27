@@ -105,6 +105,8 @@ brew install --cask figma
 brew install --cask adobe-creative-cloud
 brew install --cask deepl
 brew install --cask grammarly
+brew install --cask lastpass
+brew install --cask 1password
 
 # Communication
 brew install --cask slack
