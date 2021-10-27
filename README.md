@@ -212,6 +212,8 @@ It will install all this tools:
 
 If you want to contribute, please open an issue or a pull request and let's talk about the new feature 😉
 
+# Mac Defaults
+
 ```
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
