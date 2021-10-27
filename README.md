@@ -211,3 +211,13 @@ It will install all this tools:
 # How can I contribute?
 
 If you want to contribute, please open an issue or a pull request and let's talk about the new feature 😉
+
+```
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
+defaults write com.apple.finder ShowStatusBar -bool true 
+
+defaults write com.apple.Safari ShowOverlayStatusBar -bool true
+
+defaults write com.apple.Safari IncludeDevelopMenu -bool true 
+```
