@@ -18,12 +18,9 @@ fi
 brew install wget
 
 {
-  # shellcheck disable=SC2016
-  echo 'export PATH="/usr/local/opt/curl/bin:$PATH"'
-  # shellcheck disable=SC2016
-  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"'
-  # shellcheck disable=SC2016
-  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"'
+  echo "export PATH='/usr/local/opt/curl/bin:$PATH'"
+  echo "export PATH='/usr/local/opt/openssl@1.1/bin:$PATH'"
+  echo "export PATH='/usr/local/opt/sqlite/bin:$PATH'"
 }>>$MAC_SETUP_PROFILE
 
 # git
