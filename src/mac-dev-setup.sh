@@ -18,9 +18,7 @@ fi
 brew install wget
 
 {
-  echo "export PATH='/usr/local/opt/curl/bin:$PATH'"
-  echo "export PATH='/usr/local/opt/openssl@1.1/bin:$PATH'"
-  echo "export PATH='/usr/local/opt/sqlite/bin:$PATH'"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
 }>>$MAC_SETUP_PROFILE
 
 # git
