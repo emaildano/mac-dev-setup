@@ -21,8 +21,6 @@ brew install wget
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
 }>>$MAC_SETUP_PROFILE
 
-# git
-brew install git                                                                                      # https://formulae.brew.sh/formula/git
 # Adding git aliases (https://github.com/thomaspoignant/gitalias)
 git clone https://github.com/thomaspoignant/gitalias.git $INSTALL_FOLDER/gitalias && echo -e "[include]\n    path = $INSTALL_FOLDER/gitalias/.gitalias\n$(cat ~/.gitconfig)" > ~/.gitconfig
 
