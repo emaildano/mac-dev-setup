@@ -221,5 +221,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 defaults write com.apple.Safari ShowOverlayStatusBar -bool true
 
-defaults write com.apple.Safari IncludeDevelopMenu -bool true 
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
+defaults write com.apple.dock static-only -bool true; killall Dock
 ```
