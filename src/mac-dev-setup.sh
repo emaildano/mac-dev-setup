@@ -127,6 +127,8 @@ brew install pyenv
 # shellcheck disable=SC2016
 echo 'eval "$(pyenv init -)"' >> $MAC_SETUP_PROFILE
 
+# https://github.com/lovell/sharp/issues/2460
+brew install vips
 
 ## terraform
 brew install terraform
